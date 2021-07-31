@@ -1,1 +1,1 @@
-# Training
+# Java Training
