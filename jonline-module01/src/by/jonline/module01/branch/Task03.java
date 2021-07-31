@@ -3,8 +3,8 @@ package by.jonline.module01.branch;
 import java.util.Scanner;
 
 /*
- * Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). 
- * Определить, будут ли они расположены на одной прямой. 
+ * Р”Р°РЅС‹ С‚СЂРё С‚РѕС‡РєРё Рђ(С…1,Сѓ1), Р’(С…2,Сѓ2) Рё РЎ(С…3,Сѓ3). 
+ * РћРїСЂРµРґРµР»РёС‚СЊ, Р±СѓРґСѓС‚ Р»Рё РѕРЅРё СЂР°СЃРїРѕР»РѕР¶РµРЅС‹ РЅР° РѕРґРЅРѕР№ РїСЂСЏРјРѕР№. 
  */
 
 public class Task03 {
@@ -16,52 +16,52 @@ public class Task03 {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Введите x1 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ x1 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите x1 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ x1 >> ");
 		}
 		x1 = sc.nextDouble();
 
-		System.out.print("Введите y1 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ y1 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите y1 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ y1 >> ");
 		}
 		y1 = sc.nextDouble();
 
-		System.out.print("Введите x2 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ x2 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите x2 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ x2 >> ");
 		}
 		x2 = sc.nextDouble();
 
-		System.out.print("Введите y2 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ y2 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите y2 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ y2 >> ");
 		}
 		y2 = sc.nextDouble();
 
-		System.out.print("Введите x3 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ x3 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите x3 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ x3 >> ");
 		}
 		x3 = sc.nextDouble();
 
-		System.out.print("Введите y3 >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ y3 >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите y3 >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ y3 >> ");
 		}
 		y3 = sc.nextDouble();
 
 		if ((x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1)) {
-			System.out.println("Точки принадлежат одной прямой");
+			System.out.println("РўРѕС‡РєРё РїСЂРёРЅР°РґР»РµР¶Р°С‚ РѕРґРЅРѕР№ РїСЂСЏРјРѕР№");
 		} else {
-			System.out.println("Точки не принадлежат одной прямой");
+			System.out.println("РўРѕС‡РєРё РЅРµ РїСЂРёРЅР°РґР»РµР¶Р°С‚ РѕРґРЅРѕР№ РїСЂСЏРјРѕР№");
 		}
 		
 	}

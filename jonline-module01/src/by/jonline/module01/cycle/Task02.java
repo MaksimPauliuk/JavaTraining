@@ -1,7 +1,7 @@
 package by.jonline.module01.cycle;
 
 /*
- * Âû÷èñëèòü çíà÷åíèÿ ôóíêöèè íà îòðåçêå [à,b] c øàãîì h:
+ * Ð’Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð½Ð° Ð¾Ñ‚Ñ€ÐµÐ·ÐºÐµ [Ð°,b] c ÑˆÐ°Ð³Ð¾Ð¼ h:
  * y = {x, x>2; 
  *     {-x, x<=2
  * 			
@@ -22,7 +22,7 @@ public class Task02 {
 			} else {
 				y = -x;
 			}
-			System.out.println("Ïðè x = " + x + " y = " + y);
+			System.out.println("ÐŸÑ€Ð¸ x = " + x + " y = " + y);
 			x += h;
 		}
 

@@ -3,7 +3,7 @@ package by.jonline.module01.branch;
 import java.util.Scanner;
 
 /*
- * Íàéòè max{min(a, b), min(c, d)}.
+ * ÐÐ°Ð¹Ñ‚Ð¸ max{min(a, b), min(c, d)}.
  */
 
 public class Task02 {
@@ -19,31 +19,31 @@ public class Task02 {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Ââåäèòå a >> ");
+		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Ýòî íå ÷èñëî! Ââåäèòå a >> ");
+			System.out.print("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a >> ");
 		}
 		a = sc.nextDouble();
 
-		System.out.print("Ââåäèòå b >> ");
+		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Ýòî íå ÷èñëî! Ââåäèòå b >> ");
+			System.out.print("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b >> ");
 		}
 		b = sc.nextDouble();
 
-		System.out.print("Ââåäèòå c >> ");
+		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ c >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Ýòî íå ÷èñëî! Ââåäèòå c >> ");
+			System.out.print("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ c >> ");
 		}
 		c = sc.nextDouble();
 
-		System.out.print("Ââåäèòå d >> ");
+		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ d >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Ýòî íå ÷èñëî! Ââåäèòå d >> ");
+			System.out.print("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ d >> ");
 		}
 		d = sc.nextDouble();
 

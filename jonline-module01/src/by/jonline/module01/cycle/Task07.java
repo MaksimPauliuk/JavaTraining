@@ -3,8 +3,8 @@ package by.jonline.module01.cycle;
 import java.util.Scanner;
 
 /*
- * Äëÿ êàæäîãî íàòóðàëüíîãî ÷èñëà â ïðîìåæóòêå îò m äî n âûâåñòè âñå äåëèòåëè, 
- * êðîìå åäèíèöû è ñàìîãî ÷èñëà. m è n ââîäÿòñÿ ñ êëàâèàòóðû.
+ * Ð”Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð² Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚ÐºÐµ Ð¾Ñ‚ m Ð´Ð¾ n Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµ Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»Ð¸, 
+ * ÐºÑ€Ð¾Ð¼Ðµ ÐµÐ´Ð¸Ð½Ð¸Ñ†Ñ‹ Ð¸ ÑÐ°Ð¼Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°. m Ð¸ n Ð²Ð²Ð¾Ð´ÑÑ‚ÑÑ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹.
  */
 
 public class Task07 {
@@ -18,35 +18,35 @@ public class Task07 {
 		Scanner sc = new Scanner(System.in);
 
 		do {
-			System.out.println("Ââåäèòå íàòóðàëüíîå ÷èñëî m");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ m");
 			System.out.print(">> ");
 			if (sc.hasNextInt()) {
 				m = sc.nextInt();
 				if (m <= 0) {
-					System.out.println("×èñëî íå íàòóðàëüíîå!");
+					System.out.println("Ð§Ð¸ÑÐ»Ð¾ Ð½Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ!");
 				}
 			} else {
 				sc.next();
-				System.out.println("Ýòî íå ÷èñëî!");
+				System.out.println("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾!");
 			}
 		} while (m <= 0);
 
 		do {
-			System.out.println("Ââåäèòå íàòóðàëüíîå ÷èñëî n > m");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ n > m");
 			System.out.print(">> ");
 			if (sc.hasNextInt()) {
 				n = sc.nextInt();
 				if (n <= 0 || n<=m) {
-					System.out.println("×èñëî íå íàòóðàëüíîå èëè n <= m!");
+					System.out.println("Ð§Ð¸ÑÐ»Ð¾ Ð½Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð»Ð¸ n <= m!");
 				}
 			} else {
 				sc.next();
-				System.out.println("Ýòî íå ÷èñëî!");
+				System.out.println("Ð­Ñ‚Ð¾ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾!");
 			}
 		} while (n <= 0 || n<=m);
 
 		for (int i = m; i <= n; i++) {
-			System.out.print("Äåëèòåëè ÷èñëà " + i + ": ");
+			System.out.print("Ð”ÐµÐ»Ð¸Ñ‚ÐµÐ»Ð¸ Ñ‡Ð¸ÑÐ»Ð° " + i + ": ");
 			countDel = 0;
 			for (int j = 2; j < i; j++) {
 				if (i % j == 0) {
@@ -55,7 +55,7 @@ public class Task07 {
 				}
 			}
 			if (countDel == 0) {
-				System.out.print("íåò äåëèòåëåé");
+				System.out.print("Ð½ÐµÑ‚ Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÐµÐ¹");
 			}
 			System.out.println("");
 		}

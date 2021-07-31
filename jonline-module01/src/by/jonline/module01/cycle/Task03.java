@@ -1,7 +1,7 @@
 package by.jonline.module01.cycle;
 
 /*
- * Найти сумму квадратов первых ста чисел
+ * РќР°Р№С‚Рё СЃСѓРјРјСѓ РєРІР°РґСЂР°С‚РѕРІ РїРµСЂРІС‹С… СЃС‚Р° С‡РёСЃРµР»
  */
 
 public class Task03 {
@@ -13,7 +13,7 @@ public class Task03 {
 			sum += i * i;
 		}
 
-		System.out.println("Сумма = " + sum);
+		System.out.println("РЎСѓРјРјР° = " + sum);
 
 	}
 

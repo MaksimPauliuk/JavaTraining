@@ -3,8 +3,8 @@ package by.jonline.module01.branch;
 import java.util.Scanner;
 
 /*
- * Даны два угла треугольника (в градусах). Определить, 
- * существует ли такой треугольник, и если да, то будет ли он прямоугольным.
+ * Р”Р°РЅС‹ РґРІР° СѓРіР»Р° С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° (РІ РіСЂР°РґСѓСЃР°С…). РћРїСЂРµРґРµР»РёС‚СЊ, 
+ * СЃСѓС‰РµСЃС‚РІСѓРµС‚ Р»Рё С‚Р°РєРѕР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє, Рё РµСЃР»Рё РґР°, С‚Рѕ Р±СѓРґРµС‚ Р»Рё РѕРЅ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Рј.
  */
 
 public class Task01 {
@@ -17,29 +17,29 @@ public class Task01 {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Введите углы треугольника (будут взяты по модулю)");
-		System.out.print("Введите угол alpha >> ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СѓРіР»С‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° (Р±СѓРґСѓС‚ РІР·СЏС‚С‹ РїРѕ РјРѕРґСѓР»СЋ)");
+		System.out.print("Р’РІРµРґРёС‚Рµ СѓРіРѕР» alpha >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите угол alpha >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ СѓРіРѕР» alpha >> ");
 		}
 		alpha = Math.abs(sc.nextDouble());
 
-		System.out.print("Введите угол beta >> ");
+		System.out.print("Р’РІРµРґРёС‚Рµ СѓРіРѕР» beta >> ");
 		while (!sc.hasNextDouble()) {
 			sc.next();
-			System.out.print("Это не число! Введите угол beta >> ");
+			System.out.print("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ! Р’РІРµРґРёС‚Рµ СѓРіРѕР» beta >> ");
 		}
 		beta = Math.abs(sc.nextDouble());
 
 		gamma = 180 - (alpha + beta);
 
 		if ((alpha + beta + gamma) > 180 || (alpha * beta * gamma) == 0) {
-			System.out.println("Такого треугольника не существует");
+			System.out.println("РўР°РєРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
 		} else if (alpha == 90 || beta == 90 || gamma == 90) {
-			System.out.println("Треугольник прямоугольный");
+			System.out.println("РўСЂРµСѓРіРѕР»СЊРЅРёРє РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№");
 		} else {
-			System.out.println("Треугольник не прямоугольный");
+			System.out.println("РўСЂРµСѓРіРѕР»СЊРЅРёРє РЅРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№");
 		}
 
 	}

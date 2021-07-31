@@ -1,8 +1,8 @@
 package by.jonline.module01.branch;
 
 /*
- * Вычислить значение функции: F(x) = {x*x - 3x + 9, если x<= 3 
- * 1 / (x^3 + 6), если x > 3
+ * Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё: F(x) = {x*x - 3x + 9, РµСЃР»Рё x<= 3 
+ * 1 / (x^3 + 6), РµСЃР»Рё x > 3
  */
 
 public class Task05 {
@@ -17,7 +17,7 @@ public class Task05 {
 			f = 1 / (Math.pow(x, 3) + 6);
 		}
 
-		System.out.println("F(x) = " + f + ", при x = " + x);
+		System.out.println("F(x) = " + f + ", РїСЂРё x = " + x);
 	}
 
 }
